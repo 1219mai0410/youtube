@@ -1,7 +1,8 @@
 version: "3"
 services:
   youtube:
-    build: ./
+    # build: ./
+    image: ghcr.io/1219mai0410/youtube
     container_name: youtube
     volumes:
       - ./code:/code
