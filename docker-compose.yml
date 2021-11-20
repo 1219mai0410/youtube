@@ -1,0 +1,13 @@
+version: "3"
+services:
+  youtube:
+    # build: ./
+    image: ghcr.io/1219mai0410/youtube
+    container_name: youtube
+    volumes:
+      - ./code:/code
+      - ./file:/file
+      - /home/mai/Music:/music
+    working_dir: /code
+    # tty: true
+    command: [python3, download.py]
